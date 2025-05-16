@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/hola-mundo/',
+  build: {
+    sourcemap: false, // Disable source maps to avoid source map errors
+  },
 })
